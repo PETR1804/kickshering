@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17191e">
+  <title>3D-модель · Яндекс Go AR</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">
+    {"imports":{"three":"./vendor/three/three.module.js","three/addons/":"./vendor/three/addons/"}}
+  </script>
+  <script type="module" src="./viewer.js"></script>
+</head>
+<body class="viewer-body">
+  <header class="target-header shell">
+    <a class="brand" href="./index.html" aria-label="Яндекс Go, главная">Яндекс<span>Go</span></a>
+    <p>Вращай модель и выбирай, какие метки показывать</p>
+    <a class="button light" href="./target.html">Мишень для AR <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="viewer-screen" aria-label="Интерактивная модель самоката">
+    <div class="viewer-pane" id="viewport"></div>
+    <p class="viewer-status" id="viewerStatus" role="status">Загружаем 3D-модель…</p>
+    <aside class="viewer-legend" aria-label="Метки 3D-модели" hidden>
+      <div class="toggle-marks" id="legend"></div>
+    </aside>
+  </main>
+</body>
+</html>
