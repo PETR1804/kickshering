@@ -1,8 +1,0 @@
-<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Живая 3D-мишень</title>
-<style>
-*{box-sizing:border-box}body{margin:0;background:#17191e;color:white;font:16px system-ui;text-align:center}header{height:96px;padding:10px}a{color:#ffd400}#board{position:relative;width:min(100vw,calc((100dvh - 102px)*1.12));aspect-ratio:1120/1000;margin:auto;background:#e9e9e9}#viewport{position:absolute;inset:0}#viewport>canvas{display:block;width:100%;height:100%}.tag{position:absolute;pointer-events:none}#viewerStatus{position:absolute;top:45%;width:100%;color:#111}#legend{display:none}
-</style>
-<script type="importmap">{"imports":{"three":"./vendor/three/three.module.js","three/addons/":"./vendor/three/addons/"}}</script>
-<header>Вращай мышью · колесо — масштаб · <a href="./ar.html?live=1">Камера телефона</a><br><small id="sync">Соединение…</small><br><select id="editAnchor"><option value="">Настройка меток: выключена</option></select> <button id="saveAnchors">Скачать anchors.json</button></header>
-<div id="board"><div id="viewport"></div><p id="viewerStatus">Загрузка модели…</p><aside hidden><div id="legend"></div></aside></div>
-<script type="module" src="./viewer.js"></script></html>
